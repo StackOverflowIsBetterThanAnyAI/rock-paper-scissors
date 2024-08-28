@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Michael Münzenhofer" />
+        <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="./src/style.css" />
+    </head>
+    <body>
+        <main>
+            <h1 class="heading">Rock Paper Scissors</h1>
+            <div class="score">
+                <div>You: <span id="ownScore">0</span></div>
+                <div>COM: <span id="comScore">0</span></div>
+            </div>
+            <img
+                class="scenery"
+                src="./src/assets/background.jpeg"
+                alt=""
+                loading="lazy"
+            />
+            <div class="comSelection">
+                <div class="flexRow">
+                    <img
+                        id="comRock"
+                        class="icon"
+                        src="./src/assets/rock.png"
+                        alt="Rock"
+                        width="128px"
+                    />
+                    <img
+                        id="comPaper"
+                        class="icon"
+                        src="./src/assets/paper.png"
+                        alt="Paper"
+                        width="128px"
+                    />
+                    <img
+                        id="comScissors"
+                        class="icon"
+                        src="./src/assets/scissors.png"
+                        alt="Scissors"
+                        width="128px"
+                    />
+                </div>
+                <div id="winnerText" class="winnerScreen"></div>
+            </div>
+            <div class="selection">
+                <button onclick="calculateResult('rock')" id="rockButton">
+                    <img
+                        class="icon"
+                        src="./src/assets/rock.png"
+                        alt="Rock"
+                        width="128px"
+                    />
+                </button>
+                <button onclick="calculateResult('paper')" id="paperButton">
+                    <img
+                        class="icon"
+                        src="./src/assets/paper.png"
+                        alt="Paper"
+                        width="128px"
+                    />
+                </button>
+                <button
+                    onclick="calculateResult('scissors')"
+                    id="scissorsButton"
+                >
+                    <img
+                        class="icon"
+                        src="./src/assets/scissors.png"
+                        alt="Scissors"
+                        width="128px"
+                    />
+                </button>
+            </div>
+        </main>
+        <footer>
+            Copyright &#169; 2024 Michael Münzenhofer. All Rights Reserved.
+        </footer>
+        <script src="./src/script.js"></script>
+    </body>
+</html>
