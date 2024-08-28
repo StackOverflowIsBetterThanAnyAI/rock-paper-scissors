@@ -263,3 +263,4 @@ responsiveViewport()
 
 document.addEventListener('keydown', focusTrap)
 window.addEventListener('resize', responsiveViewport)
+window.addEventListener('orientationchange', responsiveViewport)
