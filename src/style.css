@@ -247,7 +247,7 @@ footer {
 }
 
 .winnerScreen {
-    background-color: rgba(21, 21, 21, 0.25);
+    background-color: rgba(21, 21, 21, 0.5);
     box-shadow: 16px 0px 32px -2px #151515, -16px 0px 32px -2px #151515;
     color: #f4eaea;
     font-weight: 700;
